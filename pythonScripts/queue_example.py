@@ -10,6 +10,7 @@ def getter(q, queue_return):
         print('getting item ...', item)
         if item is None:
             break
+        print("CURRENT THREAD ID: ", threading.get_ident())
         time.sleep(0.4)
         results.append(42)
         queue_return.put(results) # Send back results
