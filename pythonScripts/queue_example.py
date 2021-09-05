@@ -44,3 +44,4 @@ if __name__ == '__main__':
     operation_on_main(q2, 0.6)
     queue_thread_faster.join() # Wait for thread to finish
     print(q_return_data_2.get()) # Get results
+    
